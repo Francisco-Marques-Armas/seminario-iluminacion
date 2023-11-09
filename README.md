@@ -11,6 +11,18 @@ La iluminación global es un grupo de técnicas que modelan tanto la luz directa
 
 En clase nos concentramos en el modelo de iluminación local, que sólo tiene en cuenta el efecto de la fuente de luz, al contrario que la iluminación global, en la que un objeto se ilumina por la fuente de luz y la que reflejan los otros objetos. Además, el modelo de unity no se basa en las ecuaciones de energía emitida y absorbida por los objetos, al contrario que el modelo de radiosidad.
 
+La iluminación ambiental representa la luz que está dispersa en el ambiente de tal manera que parece venir de todas direcciones. Es el nivel base de luz que asegura que ninguna parte de la escena esté completamente oscura.
+
+    Implementación: En Unity, la configuración de la luz ambiental se puede ajustar en la ventana de Iluminación bajo la pestaña de Ambiente. Puedes establecer el color y la intensidad de la luz ambiental, lo que afecta a toda la escena de manera global. Unity también soporta luz ambiental proveniente de skyboxes y gradientes de color ambiental personalizados.
+
+La iluminación difusa simula la luz que viene de una fuente de luz e incide en un objeto, dispersándose en todas direcciones. Es la luz no brillante que es típica para superficies mate.
+
+    Implementación: Unity calcula la iluminación difusa usando el modelo de reflectancia Lambertiana, que asume que la luz se refleja igualmente en todas direcciones. Esto es parte de los cálculos del shader estándar y se aplica automáticamente a materiales con un color albedo no nulo.
+
+La iluminación especular representa los reflejos brillantes y espejados que ocurren en superficies brillantes. Es lo que crea los reflejos y la sensación de brillo en los materiales.
+
+    Implementación: En el Shader Estándar, los reflejos especulares están controlados por las propiedades de suavidad y metalicidad del material. El shader utiliza el modelo Blinn-Phong o de Renderizado Basado en la Física (PBR) para calcular el término especular.
+
 
 ## Indica las funciones de la API de Unity más importantes respecto a la iluminación.
 
