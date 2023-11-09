@@ -23,6 +23,9 @@ La iluminación especular representa los reflejos brillantes y espejados que ocu
 
 Implementación: En el Shader Estándar, los reflejos especulares están controlados por las propiedades de suavidad y metalicidad del material. El shader utiliza el modelo Blinn-Phong o de Renderizado Basado en la Física (PBR) para calcular el término especular.
 
+En Unity, los materiales son activos que definen la apariencia visual de las superficies. Son esencialmente una combinación de un shader (que dicta cómo el material interactúa con la luz y se renderiza en la pantalla) y un conjunto de propiedades (como colores, texturas y otros parámetros) que el shader utiliza.
+
+Los materiales a menudo usan texturas, que son imágenes de mapa de bits que añaden detalle a la superficie. Las texturas pueden representar varios aspectos como color, mapeo normal (para detalle de superficie), metalicidad, rugosidad, oclusión ambiental y más.
 
 ## Indica las funciones de la API de Unity más importantes respecto a la iluminación.
 
